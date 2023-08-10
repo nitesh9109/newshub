@@ -18,4 +18,4 @@ You can view a live demo of the NewsHub project [here](https://your-demo-link.co
 
 ## Credits 
 
-News API: The project utilizes the News API to fetch news articles from various sources.
+[News API](https://newsapi.org/): The project utilizes the News API to fetch news articles from various sources.
