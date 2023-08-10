@@ -6,7 +6,6 @@ NewsHub is a responsive web application that provides news articles from various
 
 ## Features
 
-
 - Search: Easily search for news articles using the search feature.
 - Categories: Explore news articles in different sections, including Technology, India, Headlines, and Politics.
 - Infinite Scrolling: The website employs infinite scrolling, allowing users to load more articles as they scroll down.
