@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* --body-color: #e4e9f7; */
+    --body-color: #ffffff;
+    --nav-color: #4070f4;
+    --side-nav: #010718;
+    --text-color: #fff;
+    --search-bar: #f2f2f2;
+    --search-text: #010718;
+    --title-color: #000;
+}
+
+body.dark {
+    --body-color: #18191a;
+    --nav-color: #242526;
+    --side-nav: #242526;
+    --text-color: #ccc;
+    --search-bar: #242526;
+    --title-color: #fff;
+}
+
+.cards {
+    margin-top: 80px;
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    background-color: var(--body-color);
+}
+
+main {
+    padding: 20px;
+    background-color: var(--body-color);
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card .content {
+    padding: 10px;
+}
+
+.card .title {
+    font-size: 25px;
+    padding: 10px 0px;
+    font-weight: 500;
+    margin-top: 0;
+    color: var(--title-color);
+}
+
+.card .description {
+    font-size: 14px;
+    color: #777;
+    font-size: 18px;
+    padding: 10px 0;
+    line-height: 25px;
+}
+
+.card .source {
+    font-size: 12px;
+    color: #888;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* scroll back button */
+
+#scrollBackButton {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#scrollBackButton::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#scrollBackButton:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#scrollBackButton:active {
+    background-color: #555;
+}
+
+#scrollBackButton.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (min-width: 500px) {
+
+    #scrollBackButton {
+        margin: 30px;
+    }
+}

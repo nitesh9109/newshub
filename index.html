@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"
+          ><a href="#home" id="home" onclick="onlinkClick('home')"
+            >NewsHub</a
+          ></span
+        >
+
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="#home">NewsHub</a></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li>
+              <a
+                href="#headlines"
+                class="active-nav"
+                onclick="onlinkClick('headlines')"
+                id="headlines"
+                >Headlines</a
+              >
+            </li>
+            <li>
+              <a
+                href="#politics"
+                class="active-nav"
+                onclick="onlinkClick('politics')"
+                id="politics"
+                >Politics</a
+              >
+            </li>
+            <li>
+              <a
+                href="#tech"
+                class="active-nav"
+                onclick="onlinkClick('tech')"
+                id="tech"
+                >Tech</a
+              >
+            </li>
+            <li>
+              <a
+                href="#india"
+                class="active-nav"
+                onclick="onlinkClick('india')"
+                id="india"
+                >India</a
+              >
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="darkLight-searchBox">
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+
+          <div class="searchBox">
+            <div class="searchToggle">
+              <i class="bx bx-x cancel"></i>
+              <i class="bx bx-search search"></i>
+            </div>
+
+            <div class="search-field">
+              <input id="inputText" type="text" placeholder="E.g Tech..." />
+              <i id="submitBtn" class="bx bx-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <figure>
+      <div class="dot white"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </figure>
+
+    <a id="scrollBackButton"></a>
+
+    <main>
+      <div class="cards">
+        <div class="card" id="card">
+          <div class="img">
+            <img src="https://via.placeholder.com/300x200" alt="news image" />
+          </div>
+
+          <div class="content">
+            <h3 class="title">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellat, maxime!
+            </h3>
+            <h6 class="source">sample source india</h6>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum non,
+              quos est officia facere laudantium illum dicta omnis ad. Expedita
+              excepturi non impedit maiores deserunt magni laudantium soluta
+              suscipit id.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/nav.js"></script>
+    <script src="js/scroll_back.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
