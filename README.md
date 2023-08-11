@@ -1,4 +1,4 @@
-![image](https://github.com/nitesh9109/newshub/assets/134139829/0d2fe9c7-6214-44f1-97f1-5d7d90dba62d)# NewsHub Project
+# NewsHub Project
 
 NewsHub is a responsive web application that provides news articles from various sections such as technology, India, headlines, and politics. The project is built using HTML, CSS, and JavaScript, and it features a search option for easy navigation and exploration of news articles. Additionally, it offers infinite scrolling for a seamless user experience.
 
