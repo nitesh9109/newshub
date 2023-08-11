@@ -11,10 +11,6 @@ NewsHub is a responsive web application that provides news articles from various
 - Infinite Scrolling: The website employs infinite scrolling, allowing users to load more articles as they scroll down.
 - Responsive Design: The project is designed to be responsive, ensuring a consistent experience across different devices.
 
-## Demo
-
-You can view a live demo of the NewsHub project [here](https://your-demo-link.com).
-
 ## Credits 
 
 [News API](https://newsapi.org/): The project utilizes the News API to fetch news articles from various sources.
